@@ -1,0 +1,19 @@
+# Frontend
+agriconnect-frontend/node_modules/
+agriconnect-frontend/dist/
+agriconnect-frontend/.env
+agriconnect-frontend/.env.local
+
+# Backend
+agriconnect-backend/target/
+agriconnect-backend/temp/
+agriconnect-backend/.env
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
