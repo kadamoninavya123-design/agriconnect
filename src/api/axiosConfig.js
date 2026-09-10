@@ -1,15 +1,17 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:9080/api",
+  baseURL: "https://agriconnect-production-9b34.up.railway.app/api",
 });
 
 // Attach JWT token to every request automatically
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
+
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }
+
   return config;
 });
 
